@@ -1,0 +1,270 @@
+:root {
+    --color-1: #ffff00;
+    --color-2: #ff0000;
+    --color-3: #696969;
+    --color-4: #2f4f4f;
+    --color-5: #1e90ff;
+    --color-6: #808080;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(20, 20, 30, 0.900);
+}
+
+/* =====================================================================Header Style Start================================================== */
+.navbar-toggler {
+    background-color: transparent;
+    border-style: none;
+}
+
+.social-icon i:first-child {
+    margin-right: 1rem;
+}
+
+.social-icon i {
+    color: #fff;
+}
+
+.nav-item a {
+    color: var(--color-3);
+}
+
+.color-transparent {
+    background-color: rgb(20, 20, 30);
+}
+
+/* =====================================================================Header Style End==================================================== */
+
+/* =====================================================================Section Profile Style=============================================== */
+.border {
+    width: 70px;
+    border-radius: 5px;
+}
+
+.name p,
+.services p {
+    color: var(--color-6);
+    width: 300px;
+}
+
+.social-icon-yellow ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.social-icon-yellow li {
+    margin-right: 0.5rem;
+}
+
+.social-icon-yellow a {
+    text-decoration: none;
+    color: var(--color-1);
+    font-size: 1.50rem;
+    display: inline-block;
+    background-color: var(--color-3);
+    border-radius: 50%;
+    padding: 0.50rem;
+    text-align: center;
+}
+
+.social-icon-yellow i {
+    display: block;
+}
+
+.social-icon-yellow a:hover {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(20, 20, 30, 0.900);
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle img {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+}
+
+/* =====================================================================Section Profile Style End=========================================== */
+
+/* =====================================================================Social Border Style Start=========================================== */
+.social-border {
+    background-color: rgba(20, 20, 30, 0.1);
+    border-radius: 2px;
+    border: 2px solid rgba(20, 20, 30, 0.50);
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+.social-border li {
+    background-color: rgba(20, 20, 30, 0.900);
+    border-style: solid;
+    border-radius: 1px;
+    padding: 0.10rem 1rem;
+    text-align: center;
+    /* border-style: none; */
+    /* margin: 0.1rem; */
+    border-width: 1px;
+}
+
+/* =====================================================================Social Border Style End============================================= */
+
+/* =====================================================================New Section Style Start============================================= */
+.color-background {
+    background-color: rgba(20, 20, 30, 0.900);
+    padding: 6rem 2rem;
+    margin-top: -4.40rem;
+    width: 100%;
+}
+
+/* =====================================================================New Section Style End=============================================== */
+
+/* =====================================================================Section-A Style Start=============================================== */
+.section-A {
+    width: 250px;
+}
+
+.text p,
+li p {
+    color: var(--color-6);
+}
+
+.section-A li p {
+    font-size: 0.50rem;
+}
+
+.section-A ul li {
+    font-weight: bold;
+    flex-basis: 48%;
+}
+
+/* =====================================================================Section-A Style End================================================  */
+
+/* =====================================================================Section-B Style Start============================================== */
+.image p {
+    color: var(--color-6);
+    font-size: 0.700rem;
+}
+
+.image h4 {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.project .image {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.uiux-text {
+    margin: 1.4rem 0.5rem;
+}
+
+.icon-arrow {
+    color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+}
+
+.arrow-icon1 {
+    margin-left: 4rem;
+}
+
+.arrow-icon2 {
+    margin-left: 3rem;
+}
+
+.arrow-icon3 {
+    margin-left: 1.5rem;
+}
+
+/* =====================================================================Section-B Style End================================================ */
+
+
+/* =====================================================================Media Qeury========================================================= */
+@media(min-width: 768px) {
+    .icon-face {
+        margin-right: 3rem;
+    }
+
+    .color-transparent {
+        background-color: transparent;
+    }
+
+    .navbar-nav li {
+        margin-right: 1rem;
+    }
+
+    .name p,
+    .services p {
+        width: 195px;
+    }
+
+    .social-border li {
+        padding: 0.50rem 2rem;
+    }
+
+    .social-border span {
+        font-size: 1.30rem;
+    }
+
+    .social-border i {
+        font-size: 1.50rem;
+    }
+}
+
+@media(min-width: 992px) {
+    .circle {
+        width: 450px;
+        height: 450px;
+        margin-top: -4rem;
+    }
+
+    .circle img {
+        position: absolute;
+        top: -5%;
+        left: 0;
+        width: 400px;
+        height: 600px;
+    }
+
+    .container {
+        margin: 1rem 4rem;
+    }
+
+    .social-border {
+        margin: 2rem 4rem;
+    }
+
+    .color-background {
+        padding: 6rem 4rem;
+    }
+
+    .section-A {
+        width: 300px;
+    }
+}
