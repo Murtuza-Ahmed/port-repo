@@ -18,16 +18,16 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin          : 0;
+    padding         : 0;
+    font-family     : Arial, Helvetica, sans-serif;
     background-color: rgba(20, 20, 30, 0.900);
 }
 
 /* =====================================================================Header Style Start================================================== */
 .navbar-toggler {
     background-color: transparent;
-    border-style: none;
+    border-style    : none;
 }
 
 .social-icon i:first-child {
@@ -50,7 +50,7 @@ body {
 
 /* =====================================================================Section Profile Style=============================================== */
 .border {
-    width: 70px;
+    width        : 70px;
     border-radius: 5px;
 }
 
@@ -61,11 +61,11 @@ body {
 }
 
 .social-icon-yellow ul {
-    display: flex;
-    flex-flow: row wrap;
+    display        : flex;
+    flex-flow      : row wrap;
     list-style-type: none;
-    margin: 1rem 0;
-    padding: 0;
+    margin         : 1rem 0;
+    padding        : 0;
 }
 
 .social-icon-yellow li {
@@ -73,14 +73,14 @@ body {
 }
 
 .social-icon-yellow a {
-    text-decoration: none;
-    color: var(--color-1);
-    font-size: 1.50rem;
-    display: inline-block;
+    text-decoration : none;
+    color           : var(--color-1);
+    font-size       : 1.50rem;
+    display         : inline-block;
     background-color: var(--color-3);
-    border-radius: 50%;
-    padding: 0.50rem;
-    text-align: center;
+    border-radius   : 50%;
+    padding         : 0.50rem;
+    text-align      : center;
 }
 
 .social-icon-yellow i {
@@ -89,21 +89,21 @@ body {
 
 .social-icon-yellow a:hover {
     background-color: var(--color-1);
-    color: var(--color-3);
+    color           : var(--color-3);
 }
 
 .circle {
-    width: 250px;
-    height: 250px;
+    width           : 250px;
+    height          : 250px;
     background-color: rgba(20, 20, 30, 0.900);
-    border-radius: 50%;
-    position: relative;
+    border-radius   : 50%;
+    position        : relative;
 }
 
 .circle img {
     position: absolute;
-    top: -10%;
-    left: -10%;
+    top     : -10%;
+    left    : -10%;
 }
 
 /* =====================================================================Section Profile Style End=========================================== */
@@ -111,31 +111,32 @@ body {
 /* =====================================================================Social Border Style Start=========================================== */
 .social-border {
     background-color: rgba(20, 20, 30, 0.1);
-    border-radius: 2px;
-    border: 2px solid rgba(20, 20, 30, 0.50);
-    margin: 1.5rem;
-    padding: 1rem;
+    border-radius   : 2px;
+    border          : 2px solid rgba(20, 20, 30, 0.50);
+    margin          : 1.5rem;
+    padding         : 1rem;
 }
 
 .social-border li {
     background-color: rgba(20, 20, 30, 0.900);
-    border-style: solid;
-    border-radius: 1px;
-    padding: 0.10rem 1rem;
-    text-align: center;
-    /* border-style: none; */
-    /* margin: 0.1rem; */
-    border-width: 1px;
+    border-style    : solid;
+    border-radius   : 1px;
+    padding         : 0.10rem 1rem;
+    text-align      : center;
+    /* border-style : none; */
+    /* margin       : 0.1rem; */
+    border-width    : 1px;
 }
 
 /* =====================================================================Social Border Style End============================================= */
 
 /* =====================================================================New Section Style Start============================================= */
 .color-background {
-    background-color: rgba(20, 20, 30, 0.900);
-    padding: 6rem 2rem;
-    margin-top: -4.40rem;
-    width: 100%;
+    background-color   : rgba(20, 20, 30, 0.900);
+    padding            : 6rem 2rem;
+    margin-top         : -4.40rem;
+    width              : 100%;
+    /* height          : 100vh; */
 }
 
 /* =====================================================================New Section Style End=============================================== */
@@ -156,25 +157,25 @@ li p {
 
 .section-A ul li {
     font-weight: bold;
-    flex-basis: 48%;
+    flex-basis : 48%;
 }
 
 /* =====================================================================Section-A Style End================================================  */
 
 /* =====================================================================Section-B Style Start============================================== */
 .image p {
-    color: var(--color-6);
+    color    : var(--color-6);
     font-size: 0.700rem;
 }
 
 .image h4 {
-    color: #fff;
+    color    : #fff;
     font-size: 1rem;
 }
 
 .project .image {
-    display: flex;
-    flex-wrap: nowrap;
+    display       : flex;
+    flex-wrap     : nowrap;
     flex-direction: row;
 }
 
@@ -183,11 +184,11 @@ li p {
 }
 
 .icon-arrow {
-    color: var(--color-1);
-    display: flex;
+    color          : var(--color-1);
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    margin: 0.4rem;
+    align-items    : center;
+    margin         : 0.4rem;
 }
 
 .arrow-icon1 {
@@ -203,6 +204,14 @@ li p {
 }
 
 /* =====================================================================Section-B Style End================================================ */
+
+/* =====================================================================Footer Style Start================================================= */
+.card {
+    background-color: var(--color-6);
+    border-radius   : 0;
+}
+
+/* =====================================================================Footer Style End=================================================== */
 
 
 /* =====================================================================Media Qeury========================================================= */
@@ -239,17 +248,17 @@ li p {
 
 @media(min-width: 992px) {
     .circle {
-        width: 450px;
-        height: 450px;
+        width     : 450px;
+        height    : 450px;
         margin-top: -4rem;
     }
 
     .circle img {
         position: absolute;
-        top: -5%;
-        left: 0;
-        width: 400px;
-        height: 600px;
+        top     : -5%;
+        left    : 0;
+        width   : 400px;
+        height  : 600px;
     }
 
     .container {
@@ -266,5 +275,13 @@ li p {
 
     .section-A {
         width: 300px;
+    }
+
+    .footer {
+        margin-top: -10rem;
+    }
+
+    .color-background {
+        height: 100vh;
     }
 }
