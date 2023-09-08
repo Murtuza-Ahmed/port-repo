@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assest/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
 </head>
 
 <body>
@@ -41,10 +43,13 @@
                     </li>
                 </ul>
                 <div class="social-icon fs-3">
-                    <a href="https://www.linkedin.com/in/murtuza-ahmed-36012628b/" target="_blank"><i
-                            class="fa-brands fa-linkedin wow animate__animated animate__rotateInDownLeft"></i></a>
-                    <a href="https://github.com/Murtuza-Ahmed" target="_blank"><i
-                            class="fa-brands fa-github wow animate__animated animate__rotateInDownLeft"></i></a>
+                    <a href="https://www.linkedin.com/in/murtuza-ahmed-36012628b/" target="_blank"
+                        class="text-decoration-none"><i
+                            class="fa-brands fa-linkedin wow animate__animated animate__rotateInDownLeft float"></i>
+                    </a>
+                    <a href="https://github.com/Murtuza-Ahmed" target="_blank" class="text-decoration-none"><i
+                            class="fa-brands fa-github wow animate__animated animate__rotateInDownLeft float"></i>
+                    </a>
                     <span class="fa-solid fa-bars text-light d-none d-md-inline"></span>
                 </div>
             </div>
@@ -83,17 +88,22 @@
                 </div>
                 <div class="social-icon-yellow">
                     <ul>
-                        <li><a href="https://www.facebook.com/profile.php?id=100094099460529" target="_blank"
+                        <li class="pulse"><a href="https://www.facebook.com/profile.php?id=100094099460529"
+                                target="_blank" class="wow animate__animated animate__bounce"><i
+                                    class="fa-brands fa-facebook wow animate__animated animate__bounce"></i>
+                            </a>
+                        </li>
+                        <li class="pulse"><a href="https://twitter.com/MurtuzaAhm87472" target="_blank"
                                 class="wow animate__animated animate__bounce"><i
-                                    class="fa-brands fa-facebook wow animate__animated animate__bounce"></i></a></li>
-                        <li><a href="https://twitter.com/MurtuzaAhm87472" target="_blank"
+                                    class="fa-brands fa-twitter wow animate__animated animate__bounce"></i>
+                            </a>
+                        </li>
+                        <li class="pulse"><a href="https://www.instagram.com/murtuza3914/" target="_blank"
                                 class="wow animate__animated animate__bounce"><i
-                                    class="fa-brands fa-twitter wow animate__animated animate__bounce"></i></a></li>
-                        <li><a href="https://www.instagram.com/murtuza3914/" target="_blank"
-                                class="wow animate__animated animate__bounce"><i
-                                    class="fa-brands fa-instagram wow animate__animated animate__bounce"></i></a></li>
-                        <li><a href="#" class="wow animate__animated animate__fadeOut"><i
-                                    class="fa-solid fa-check wow animate__animated animate__fadeOut"></i></a></li>
+                                    class="fa-brands fa-instagram wow animate__animated animate__bounce"></i>
+                            </a>
+                        </li>
+                        <li><a href="#"><i class="fa-solid fa-check flicker"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -108,36 +118,38 @@
     <!-- ==========================================================Section Profile End============================== -->
 
     <!-- ==========================================================Section Social Start============================= -->
-    <section class="social-border">
-        <ul class="d-flex flex-row flex-wrap list-unstyled m-0 p-0">
-            <li class="col-6 col-md-3">
-                <div class="icon text-light">
-                    <i class="fa-brands fa-meta text-primary"></i>
-                    <span>Meta</span>
-                </div>
-            </li>
-            <li class="col-6 col-md-3">
-                <span class="text-primary fw-bold">G</span>
-                <span class="text-danger fw-bold">o</span>
-                <span class="text-warning fw-bold">o</span>
-                <span class="text-primary fw-bold">g</span>
-                <span class="text-success fw-bold">l</span>
-                <span class="text-danger fw-bold">e</span>
-            </li>
-            <li class="col-6 col-md-3">
-                <div class="icon text-light">
-                    <span>Linked</span>
-                    <i class="fa-brands fa-linkedin text-primary"></i>
-                </div>
-            </li>
-            <li class="col-6 col-md-3">
-                <div class="icon text-light">
-                    <i class="fa-brands fa-slack text-danger-emphasis"></i>
-                    <span>Slack</span>
-                </div>
-            </li>
-        </ul>
-    </section>
+    <div class="overflow-hidden">
+        <section class="social-border slide">
+            <ul class="d-flex flex-row flex-wrap list-unstyled m-0 p-0">
+                <li class="col-6 col-md-3 bounceShakeY">
+                    <div class="icon text-light">
+                        <i class="fa-brands fa-meta text-primary"></i>
+                        <span>Meta</span>
+                    </div>
+                </li>
+                <li class="col-6 col-md-3 bounceShakeY">
+                    <span class="text-primary fw-bold">G</span>
+                    <span class="text-danger fw-bold">o</span>
+                    <span class="text-warning fw-bold">o</span>
+                    <span class="text-primary fw-bold">g</span>
+                    <span class="text-success fw-bold">l</span>
+                    <span class="text-danger fw-bold">e</span>
+                </li>
+                <li class="col-6 col-md-3 bounceShakeY">
+                    <div class="icon text-light">
+                        <span>Linked</span>
+                        <i class="fa-brands fa-linkedin text-primary"></i>
+                    </div>
+                </li>
+                <li class="col-6 col-md-3 bounceShakeY">
+                    <div class="icon text-light">
+                        <i class="fa-brands fa-slack text-danger-emphasis"></i>
+                        <span>Slack</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
     <!-- ==========================================================Section Social End=============================== -->
 
     <!-- ==========================================================New Section Start================================ -->
@@ -222,41 +234,49 @@
     <div class="footer container-fluid">
         <footer
             class="mt-3 d-flex flex-column flex-wrap justify-content-center align-items-center d-md-flex flex-md-row flex-md-wrap justify-content-around">
-            <div class="card mb-3 col-10 col-md-2" style="width: 18rem;">
-                <div class="card-header m-2">
-                    <div class="social-icon-yellow text-warning fs-5">
-                        <a href="#"><i class="fa-solid fa-pen-ruler"></i></a>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card mb-3 col-10 col-md-2">
+                    <div class="card-header m-2">
+                        <div class="social-icon-yellow text-warning fs-5">
+                            <a href="#"><i class="fa-solid fa-pen-ruler"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title text-light fw-bold">UI/UX Design</h5>
-                    <p class="card-text text-black-50">Create a beautiful and useful ui display for ease of use of the
-                        application for
-                        users.</p>
+                    <div class="card-body">
+                        <h5 class="card-title text-light fw-bold">UI/UX Design</h5>
+                        <p class="card-text text-black-50">Create a beautiful and useful ui display for ease of use of
+                            the
+                            application for
+                            users.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card mb-3 col-10 col-md-2" style="width: 18rem;">
-                <div class="card-header m-2">
-                    <div class="social-icon-yellow text-warning fs-5">
-                        <a href="#"><i class="fa-solid fa-desktop"></i></a>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card mb-3 col-10 col-md-2">
+                    <div class="card-header m-2">
+                        <div class="social-icon-yellow text-warning fs-5">
+                            <a href="#"><i class="fa-solid fa-desktop"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title text-light fw-bold">Web Programming</h5>
-                    <p class="card-text text-black-50">Build a quality website with the best technology and optimization
-                        on search engines.</p>
+                    <div class="card-body">
+                        <h5 class="card-title text-light fw-bold">Web Programming</h5>
+                        <p class="card-text text-black-50">Build a quality website with the best technology and
+                            optimization
+                            on search engines.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card mb-3 col-10 col-md-2" style="width: 18rem;">
-                <div class="card-header m-2">
-                    <div class="social-icon-yellow text-warning fs-5">
-                        <a href="#"><i class="fa-solid fa-mobile"></i></a>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card mb-3 col-10 col-md-2">
+                    <div class="card-header m-2">
+                        <div class="social-icon-yellow text-warning fs-5">
+                            <a href="#"><i class="fa-solid fa-mobile"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title text-light fw-bold">Mobile Development</h5>
-                    <p class="card-text text-black-50">Create an app from your own business for a more professional
-                        business performance.</p>
+                    <div class="card-body">
+                        <h5 class="card-title text-light fw-bold">Mobile Development</h5>
+                        <p class="card-text text-black-50">Create an app from your own business for a more professional
+                            business performance.</p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -275,6 +295,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         new WOW().init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

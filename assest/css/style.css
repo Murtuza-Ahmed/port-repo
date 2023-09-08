@@ -46,6 +46,21 @@ body {
     background-color: rgb(20, 20, 30);
 }
 
+
+.float {
+    transition        : .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition   : .5s, color .10s;
+}
+
+.float:hover {
+    box-shadow       : 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+    transform        : translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    -moz-transform   : translate(0px, 5px);
+}
+
+
 /* =====================================================================Header Style End==================================================== */
 
 /* =====================================================================Section Profile Style=============================================== */
@@ -106,6 +121,58 @@ body {
     left    : -10%;
 }
 
+
+.flicker {
+    animation-name           : flicker;
+    animation-duration       : 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.pulse {
+    animation-name           : pulse;
+    animation-duration       : 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 /* =====================================================================Section Profile Style End=========================================== */
 
 /* =====================================================================Social Border Style Start=========================================== */
@@ -127,6 +194,80 @@ body {
     /* margin       : 0.1rem; */
     border-width    : 1px;
 }
+
+
+.slide {
+    animation-name           : slide;
+    animation-duration       : 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.bounceShakeY:hover {
+    animation-name            : bounce-shakeY;
+    -webkit-animation-name    : bounce-shakeY;
+    -moz-animation-name       : bounce-shakeY;
+    animation-duration        : 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration   : 1s;
+}
+
+@keyframes bounce-shakeY {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    12% {
+        transform: translateY(50%);
+    }
+
+    24% {
+        transform: translateY(-20%);
+    }
+
+    36% {
+        transform: translateY(20%);
+    }
+
+    48% {
+        transform: translateY(-10%);
+    }
+
+    60% {
+        transform: translateY(10%);
+    }
+
+    72% {
+        transform: translateY(-5%);
+    }
+
+    84% {
+        transform: translateY(5%);
+    }
+
+    96% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 
 /* =====================================================================Social Border Style End============================================= */
 
@@ -209,6 +350,7 @@ li p {
 .card {
     background-color: var(--color-6);
     border-radius   : 0;
+    width           : 100%;
 }
 
 /* =====================================================================Footer Style End=================================================== */
@@ -243,6 +385,18 @@ li p {
 
     .social-border i {
         font-size: 1.50rem;
+    }
+
+    .card {
+        width: 15rem;
+    }
+
+    .footer .card:first-child {
+        width: 14rem;
+    }
+
+    .footer {
+        margin-top: -5rem;
     }
 }
 
